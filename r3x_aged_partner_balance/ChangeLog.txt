@@ -1,0 +1,35 @@
+Version 			Date(MM/DD/YYYY)				Author					Enhancement
+1.4					08/27/2014						RU3IX PTY LTD			1. Modified Functionality in report to 
+																			   print Multiple payment terms in Pdf and Excel.
+
+1.4					08/28/2014						RU3IX PTY LTD			1. Bug Fixed in Excel Report (Not Due) not Printing.
+
+1.4					09/02/2014						RU3IX PTY LTD			1. Bug Fixed in Period Length Variable Mis matching.
+
+1.5					22/11/2014						RU3IX PTY LTD			1. Added New Report Detail Aged Partner Balance.
+
+1.5					25/11/2014						RU3IX PTY LTD			1. Added Header for Each Page.
+
+1.6					26/11/2014						RU3IX PTY LTD			1. Enhanced Excel Report for Detail Aged partner Balance.
+
+1.6					28/11/2014						RU3IX PTY LTD			1. Made Detail Report Invisible when Aged by payment Term is Not Marked.
+																			2. Insert Currency Notation For each and Every Period.
+
+1.7					29/11/2014						RU3IX PTY LTD			1. Modify Aged Trail Balance Report , Removed Unknown partner Balance Line.
+																			2. Modified the Functionality in Aged Trail Balance to Calculate Partial Balance Every time.
+																			3. Added Field Not Due in Detail Balance Report in Excel and PDF , removed Field 'Next Action Date'.
+																			4. Changed The Alignment , Font Size and Renamed Period1, Period2,Period3 to Period-1,Period-2,Period-3
+
+1.8					10/12/2014						RU3IX PTY LTD			1. Modified the PDF and Excel Report for Detailed Aged Partner Balance.
+																			2. Fixed the Bug in Older Period Not Printing the Values.
+																			
+1.9					12/12/2014						RU3IX PTY LTD			1. Modified the PDF Report for Aged Partner Balance Print By Days Format.
+
+2.0					12/30/2014						RU3IX PTY LTD			1. Modified the View in Wizard.
+																			   Basing on the Ageing By the Period Length Calculation performed.
+
+2.1					9/1/2015						RU3IX PTY LTD			1. Added Account Configuration as Depedency (r3x_res_config).
+																			2. Basing on the Configuration the Headers in the Report should Be changed.
+																			3. If Aged by Payment Term is selected, the Headers should be "period-1,period-2,.."
+																			4. If Aged by Period Length is selected, the Header should be based on the Period Length (In Days).
+																			5. In the Detailed report, the Totals are changed to Bold.																			   																																																																												

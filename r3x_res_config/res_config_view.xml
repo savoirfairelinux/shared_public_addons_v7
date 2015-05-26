@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+
+		<record id="view_account_config" model="ir.ui.view">
+            <field name="name">Ru3ix account settings</field>
+            <field name="model">account.config.settings</field>
+            <field name="inherit_id" ref="account.view_account_config_settings"/>
+            <!--<field name="priority" eval="16"/>-->
+            <field name="arch" type="xml">
+                <xpath expr="//separator[@string='eInvoicing &amp; Payments']" position="after">
+                <group>
+                	<label for="id" string="Ageing By"/>
+                	<div>
+                    	<div>
+                        	<field name="check_payment_option" class="oe_inline"/>
+                        	<label for="check_payment_option"/>
+                  		</div>
+                    	<div>
+                    		<label for="module_aged_by_partner_balance" attrs="{'invisible':[('check_payment_option','=', True)]}"/>
+                        	<field name="module_aged_by_partner_balance" attrs="{'invisible':[('check_payment_option','=', True)]}"/> 
+                    	</div>
+                    </div>
+                 </group>
+                </xpath>
+            </field>
+        </record>
+	</data>
+</openerp>
