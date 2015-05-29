@@ -25,6 +25,7 @@ import unicodedata
 from datetime import datetime
 from openerp.report import report_sxw
 from openerp.addons.account.report.common_report_header import common_report_header
+from openerp.osv import fields, osv
 
 class new_aged_trial_report(report_sxw.rml_parse,common_report_header):
 
