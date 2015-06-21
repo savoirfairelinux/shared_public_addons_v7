@@ -1,3 +1,5 @@
-import aged_partner_balance
-import report
-import wizard
+from . import (
+    aged_partner_balance,
+    report,
+    wizard
+    )
