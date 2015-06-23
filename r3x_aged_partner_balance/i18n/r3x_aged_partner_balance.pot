@@ -1,0 +1,366 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+# 	* r3x_aged_partner_balance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-23 14:28+0000\n"
+"PO-Revision-Date: 2015-06-23 10:30-0500\n"
+"Last-Translator: Maxime Chambreuil <maxime.chambreuil@savoirfairelinux.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: r3x_aged_partner_balance
+#: selection:account.payment.display.credit,state:0
+msgid "Balanced"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:182
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1145
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1159
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1172
+#, python-format
+msgid "form1name"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/wizard/r3x_aged_partner_balance.py:92
+#, python-format
+msgid "You must select atleast one Payment Term."
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:170
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:185
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1132
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1175
+#, python-format
+msgid "Comments"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:164
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1126
+#, python-format
+msgid "Current"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: view:account.aged.trial.balance:0
+msgid "Print"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:163
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:178
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1125
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1141
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1155
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1168
+#, python-format
+msgid "Not Due"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:167
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1129
+#, python-format
+msgid "Period 3"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:166
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1128
+#, python-format
+msgid "Period 2"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:165
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1127
+#, python-format
+msgid "Period 1"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,partner_id:0
+msgid "partner_id"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:171
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:186
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1133
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1176
+#, python-format
+msgid "Next Action Date"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: selection:account.payment.display.credit,state:0
+msgid "Unbalanced"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,state:0
+msgid "Status"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.aged.trial.balance,check_account_config:0
+msgid "Verify Account Configuration"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.aged.trial.balance,detailed_report:0
+msgid "Detailed Report"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,company_id:0
+msgid "Company"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:168
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1130
+#, python-format
+msgid "Older"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:180
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1143
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1157
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1170
+#, python-format
+msgid "form3name"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.aged.trial.balance,hide_period:0
+msgid "Aged By Payment Terms"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:181
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1144
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1158
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1171
+#, python-format
+msgid "form2name"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,move_id:0
+msgid "move_id"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,debit:0
+msgid "debit"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,blocked:0
+msgid "blocked"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: view:account.aged.trial.balance:0
+msgid "Report Options"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: help:account.payment.display.credit,date_maturity:0
+msgid ""
+"This field is used for payable and receivable journal entries. You can put "
+"the limit date for the payment of this line."
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,invoice_no:0
+msgid "invoice no"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,account_id:0
+msgid "Account"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1140
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1154
+#, python-format
+msgid "Due Date"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: model:ir.model,name:r3x_aged_partner_balance.model_account_aged_trial_balance
+msgid "Account Aged Trial balance Report"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: view:account.aged.trial.balance:0
+#: model:ir.actions.act_window,name:r3x_aged_partner_balance.r3x_action_account_aged_balance_view
+msgid "Aged Partner Balance"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:183
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1146
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1160
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1173
+#, python-format
+msgid "form0name"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,credit:0
+msgid "Credit"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:179
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1142
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1156
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1169
+#, python-format
+msgid "form4name"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/wizard/r3x_aged_partner_balance.py:92
+#: code:addons/r3x_aged_partner_balance/wizard/r3x_aged_partner_balance.py:95
+#, python-format
+msgid "User Error!"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,result:0
+msgid "Balance"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/wizard/r3x_aged_partner_balance.py:95
+#, python-format
+msgid "You must set a start date."
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.aged.trial.balance,payment_term_id:0
+msgid "Payment Terms"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1139
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1153
+#, python-format
+msgid "Invoice No"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,ref:0
+#: field:account.payment.display.credit,reference:0
+msgid "Reference"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,date_maturity:0
+#: field:account.payment.display.credit,due_date:0
+msgid "Due date"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,reconcile_id:0
+msgid "reconcile_id"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,invoice_date:0
+msgid "invoice date"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:162
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:177
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1124
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1167
+#, python-format
+msgid "Payment Term"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,date:0
+msgid "Effective Date"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,currency_id:0
+msgid "Currency"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: view:account.aged.trial.balance:0
+msgid "Export"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: model:ir.model,name:r3x_aged_partner_balance.model_account_payment_display_credit
+msgid "Account Payment Display Credit"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: view:account.aged.trial.balance:0
+msgid "Cancel"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:161
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:176
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1123
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1138
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1152
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1166
+#, python-format
+msgid "Partner"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:169
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:184
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1131
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1147
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1161
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1174
+#, python-format
+msgid "Total"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: view:account.aged.trial.balance:0
+msgid ""
+"Aged Partner Balance is a more detailed report of your receivables by "
+"intervals. When opening that report, OpenERP asks for the name of the "
+"company, the fiscal period and the size of the interval to be analyzed (in "
+"days). OpenERP then calculates a table of credit balance by period. So if "
+"you request an interval of 30 days OpenERP generates an analysis of "
+"creditors for the past month, past two months, and so on. "
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: view:account.aged.trial.balance:0
+msgid "or"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: help:account.payment.display.credit,currency_id:0
+msgid "The optional other currency if it is a multi-currency entry."
+msgstr ""

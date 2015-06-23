@@ -38,7 +38,6 @@ coverage.xml
 
 # Translations
 *.mo
-*.pot
 
 # Pycharm
 .idea
