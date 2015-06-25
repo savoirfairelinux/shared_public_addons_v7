@@ -31,8 +31,15 @@
                     Payment Terms Added for Group By Payment Terms with Detail Transaction Report.
                     Original Aged Partner Balance Functionality Modified Return the Partial Amount.
                     """,
-    'depends': ["account","account_financial_report_webkit","account_followup","r3x_res_config"],
-    'data': ['account_report_aged_partner_balance_view.xml'],
+    'depends': [
+        "account_financial_report_webkit",
+        "account_followup",
+        "r3x_res_config"
+    ],
+    'data': [
+        'security/ir.model.access.csv',
+        'account_report_aged_partner_balance_view.xml',
+    ],
     'installable': True,
     'auto_install': False,
 }
