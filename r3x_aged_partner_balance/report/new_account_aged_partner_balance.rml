@@ -104,32 +104,32 @@
       <tr>
         <td><para style="terp_header"><font color="white"> </font></para>
         </td>
-        <td><para style="terp_header_Centre">Aged Trial Balance</para></td>
+        <td><para style="terp_header_Centre">[[ translate('Aged Trial Balance') ]]</para></td>
         <td><para style="terp_header"><font color="white"> </font></para></td>
       </tr>
     </blockTable>
     <blockTable colWidths="110.0,110.0,110.0,110.0,128.0,93.0,110.0" style="Table8">
       <tr>
         <td>
-          <para style="terp_tblheader_General_Centre">Chart of Accounts</para>
+          <para style="terp_tblheader_General_Centre">[[ translate('Chart of Accounts') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_General_Centre">Fiscal Year</para>
+          <para style="terp_tblheader_General_Centre">[[ translate('Fiscal Year') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_General_Centre">Start Date</para>
+          <para style="terp_tblheader_General_Centre">[[ translate('Start Date') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_General_Centre">Period Length(days)</para>
+          <para style="terp_tblheader_General_Centre">[[ translate('Period Length(days)') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_General_Centre">Partner's</para>
+          <para style="terp_tblheader_General_Centre">[[ translate('Partner\'s') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_General_Centre">Analysis Direction</para>
+          <para style="terp_tblheader_General_Centre">[[ translate('Analysis Direction') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_General_Centre">Target Moves</para>
+          <para style="terp_tblheader_General_Centre">[[ translate('Target Moves') ]]</para>
         </td>
       </tr>
         <tr>
@@ -149,7 +149,7 @@
           <para style="terp_default_Centre_8">[[ get_result_selection(data['form']) ]]</para>
         </td>
         <td>
-          <para style="terp_default_Centre_8">[[ data['form']['direction_selection'] ]]</para>
+          <para style="terp_default_Centre_8">[[ get_direction_term() ]]</para>
         </td>
         <td>
           <para style="terp_default_Centre_8">[[ get_target_move(data) ]]</para>
@@ -162,14 +162,14 @@
     <blockTable colWidths="95.0,60.0,80.0,75.0,75.0,75.0,75.0,75.0,85.0,70.0,75.0" style="Table2" repeatRows="1">
       <tr>
         <td>
-          <para style="terp_tblheader_Details">Partners</para>
+          <para style="terp_tblheader_Details">[[ translate('Partners') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_Details_Right">Payment Term</para>
+          <para style="terp_tblheader_Details_Right">[[ translate('Payment Term') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_Details_Right">Due[[ data['form']['direction_selection'] == 'future' and ' ' or removeParentNode('para') ]]</para>
-          <para style="terp_tblheader_Details_Right">Not due[[ data['form']['direction_selection'] != 'future' and ' ' or removeParentNode('para') ]]</para>
+          <para style="terp_tblheader_Details_Right">[[ translate('Due') ]] [[ data['form']['direction_selection'] == 'future' and ' ' or removeParentNode('para') ]]</para>
+          <para style="terp_tblheader_Details_Right">[[ translate('Not due') ]] [[ data['form']['direction_selection'] != 'future' and ' ' or removeParentNode('para') ]]</para>
         </td>
         <td>
           <para style="terp_tblheader_Details_Right">[[ data['form']['4']['name'] ]]</para>
@@ -187,20 +187,20 @@
           <para style="terp_tblheader_Details_Right">[[ data['form']['0']['name'] ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_Details_Right">Total</para>
+          <para style="terp_tblheader_Details_Right">[[ translate('Total') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_Details_Right">Comments</para>
+          <para style="terp_tblheader_Details_Right">[[ translate('Comments') ]]</para>
         </td>
         <td>
-          <para style="terp_tblheader_Details_Right">Next Action Date</para>
+          <para style="terp_tblheader_Details_Right">[[ translate('Next Action Date') ]]</para>
         </td>
       </tr>
 
       <tr>
         <td>
           <para style="P3"> <font color="white">[[ (get_lines(data['form']), 'partner') == False or removeParentNode('para')  ]]</font></para>
-          <para style="Total">Account Total</para>
+          <para style="Total">[[ translate('Account Total') ]]</para>
         </td>
         <td>
         	<para style="Total_right"></para>

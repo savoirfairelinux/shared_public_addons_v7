@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <report
+            auto="False"
+            id="report_account_aged_partner_balance"
+            model="account.aged.trial.balance"
+            name="aged_trial_balance_detail_without_details"
+            rml="r3x_aged_partner_balance/report/account_aged_partner_balance.rml"
+            string="Aged Partner Balance"
+        />
+
+        <report
+            auto="False"
+            id="report_account_aged_partner_balance_detailed"
+            model="account.aged.trial.balance"
+            name="aged_trial_report_detailed"
+            rml="r3x_aged_partner_balance/report/account_aged_partner_balance_detailed.rml"
+            string="Aged Partner Balance (Detailed)"
+        />
+
+        <report
+            auto="False"
+            id="report_new_account_aged_partner_balance"
+            model="account.aged.trial.balance"
+            name="new_aged_trial_balance"
+            rml="r3x_aged_partner_balance/report/new_account_aged_partner_balance.rml"
+            string="Aged Partner Balance"
+        />
+
+        <report
+            auto="False"
+            id="report_new_account_aged_partner_balance_detailed"
+            model="account.aged.trial.balance"
+            name="new_aged_trial_balance_detail"
+            rml="r3x_aged_partner_balance/report/new_account_aged_partner_balance_detail.rml"
+            string="Aged Partner Balance (Detailed)"
+        />
+
+    </data>
+</openerp>
