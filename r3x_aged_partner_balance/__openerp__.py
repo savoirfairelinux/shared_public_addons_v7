@@ -39,6 +39,7 @@
     'data': [
         'security/ir.model.access.csv',
         'account_report_aged_partner_balance_view.xml',
+        'report/report.xml',
     ],
     'installable': True,
     'auto_install': False,

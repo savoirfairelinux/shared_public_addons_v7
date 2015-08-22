@@ -26,6 +26,8 @@ from datetime import datetime
 from openerp.report import report_sxw
 from openerp.addons.account.report.common_report_header import common_report_header
 from openerp.osv import fields, osv
+from openerp.tools.translate import _
+
 
 class new_aged_trial_report(report_sxw.rml_parse,common_report_header):
 
@@ -47,10 +49,43 @@ class new_aged_trial_report(report_sxw.rml_parse,common_report_header):
             'get_account': self._get_account,
             'get_fiscalyear': self._get_fiscalyear,
             'get_target_move': self._get_target_move,
+            'translate': self.translate,
+            'get_direction_term': self._get_direction_term,
         })
+
+        self.context = context
+
+    def translate(self, term):
+        lang = self.context.setdefault('lang', 'en')
+
+        translation_model = self.pool.get('ir.translation')
+
+        # Translate a label in the report
+        translation_ids = translation_model.search(
+            self.cr, self.uid, [
+                ('type', '=', 'report'),
+                ('name', '=', self.name),
+                ('lang', '=', lang),
+                ('value', '!=', ''),
+                ('src', '=', term),
+            ], context=self.localcontext)
+
+        if translation_ids:
+            translation = translation_model.browse(
+                self.cr, self.uid, translation_ids[0],
+                context=self.localcontext)
+
+            return translation.value
+
+        return term
+
+    def _get_direction_term(self):
+        term = 'Past' if self.direction_selection == 'past' else 'Future'
+        return self.translate(term)
 
     def set_context(self, objects, data, ids, report_type=None):
         obj_move = self.pool.get('account.move.line')
+
         ctx = data['form'].get('used_context', {})
         ctx.update({'fiscalyear': False, 'all_fiscalyear': True})
         self.query = obj_move._query_get(self.cr, self.uid, obj='l', context=ctx)
@@ -74,11 +109,11 @@ class new_aged_trial_report(report_sxw.rml_parse,common_report_header):
 
     def _get_result_selection(self,form):
         if form['result_selection']== 'customer':
-            return 'Receivable Accounts'
+            return self.translate('Receivable Accounts')
         elif form['result_selection'] == 'supplier':
-            return 'Payable Accounts'
+            return self.translate('Payable Accounts')
         else:
-            return 'Receivable and Payable Accounts'
+            return self.translate('Receivable and Payable Accounts')
 
     ## ................. Adding Lines Logic Here ...................
     
@@ -554,16 +589,16 @@ class new_aged_trial_report(report_sxw.rml_parse,common_report_header):
     def _get_partners(self,data):
         # TODO: deprecated, to remove in trunk
         if data['form']['result_selection'] == 'customer':
-            return self._translate('Receivable Accounts')
+            return self.translate('Receivable Accounts')
         elif data['form']['result_selection'] == 'supplier':
-            return self._translate('Payable Accounts')
+            return self.translate('Payable Accounts')
         elif data['form']['result_selection'] == 'customer_supplier':
-            return self._translate('Receivable and Payable Accounts')
+            return self.translate('Receivable and Payable Accounts')
         return ''
 
-report_sxw.report_sxw('report.r3x_aged_partner_balance.new_aged_trial_balance', 'res.partner',
+report_sxw.report_sxw('report.new_aged_trial_balance', 'res.partner',
         'addons/r3x_aged_partner_balance/report/new_account_aged_partner_balance.rml',
-        parser=new_aged_trial_report, 
+        parser=new_aged_trial_report,
         header="internal landscape")
 
 
@@ -571,6 +606,8 @@ class new_aged_trial_report_detail(report_sxw.rml_parse,common_report_header):
 
     def __init__(self, cr, uid, name, context):
         super(new_aged_trial_report_detail, self).__init__(cr, uid, name, context=context)
+
+        user = self.pool['res.users'].browse(cr, uid, uid, context=context)
 
         self.total_account = []
         self.localcontext.update({
@@ -588,7 +625,39 @@ class new_aged_trial_report_detail(report_sxw.rml_parse,common_report_header):
             'get_fiscalyear': self._get_fiscalyear,
             'get_target_move': self._get_target_move,
             'get_detail_lines':self._display_screen,
+            'translate': self.translate,
+            'get_direction_term': self._get_direction_term,
         })
+
+        self.context = context
+
+    def translate(self, term):
+        lang = self.context.setdefault('lang', 'en')
+
+        translation_model = self.pool.get('ir.translation')
+
+        # Translate a label in the report
+        translation_ids = translation_model.search(
+            self.cr, self.uid, [
+                ('type', '=', 'report'),
+                ('name', '=', self.name),
+                ('lang', '=', lang),
+                ('value', '!=', ''),
+                ('src', '=', term),
+            ], context=self.localcontext)
+
+        if translation_ids:
+            translation = translation_model.browse(
+                self.cr, self.uid, translation_ids[0],
+                context=self.localcontext)
+
+            return translation.value
+
+        return term
+
+    def _get_direction_term(self):
+        term = 'Past' if self.direction_selection == 'past' else 'Future'
+        return self.translate(term)
 
     def set_context(self, objects, data, ids, report_type=None):
         obj_move = self.pool.get('account.move.line')
@@ -615,11 +684,11 @@ class new_aged_trial_report_detail(report_sxw.rml_parse,common_report_header):
 
     def _get_result_selection(self,form):
         if form['result_selection']== 'customer':
-            return 'Receivable Accounts'
+            return self.translate('Receivable Accounts')
         elif form['result_selection'] == 'supplier':
-            return 'Payable Accounts'
+            return self.translate('Payable Accounts')
         else:
-            return 'Receivable and Payable Accounts'
+            return self.translate('Receivable and Payable Accounts')
 
     def _get_lines(self, form):
         res = []
@@ -1095,14 +1164,14 @@ class new_aged_trial_report_detail(report_sxw.rml_parse,common_report_header):
     def _get_partners(self,data):
         # TODO: deprecated, to remove in trunk
         if data['form']['result_selection'] == 'customer':
-            return self._translate('Receivable Accounts')
+            return self.translate('Receivable Accounts')
         elif data['form']['result_selection'] == 'supplier':
-            return self._translate('Payable Accounts')
+            return self.translate('Payable Accounts')
         elif data['form']['result_selection'] == 'customer_supplier':
-            return self._translate('Receivable and Payable Accounts')
+            return self.translate('Receivable and Payable Accounts')
         return ''
 
-report_sxw.report_sxw('report.r3x_aged_partner_balance.new_aged_trial_balance_detail', 
+report_sxw.report_sxw('report.new_aged_trial_balance_detail', 
                       'res.partner',
                       'addons/r3x_aged_partner_balance/report/new_account_aged_partner_balance_detail.rml'
                       ,parser=new_aged_trial_report_detail, 
