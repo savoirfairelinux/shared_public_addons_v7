@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenERP Server 7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-23 14:28+0000\n"
-"PO-Revision-Date: 2015-06-23 10:30-0500\n"
-"Last-Translator: Maxime Chambreuil <maxime.chambreuil@savoirfairelinux.com>\n"
+"POT-Creation-Date: 2015-07-07 14:42+0000\n"
+"PO-Revision-Date: 2015-07-07 10:42-0500\n"
+"Last-Translator: David Dufresne <david.dufresne@savoirfairelinux.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,9 +17,11 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 
 #. module: r3x_aged_partner_balance
-#: selection:account.payment.display.credit,state:0
-msgid "Balanced"
-msgstr "Balance"
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Partners"
+msgstr "Partenaires"
 
 #. module: r3x_aged_partner_balance
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:182
@@ -37,10 +39,25 @@ msgid "You must select atleast one Payment Term."
 msgstr "Vous devez sélectionner au moins un terme de paiement."
 
 #. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Period Length(days)"
+msgstr "Durée (jours)"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Due"
+msgstr "Dû"
+
+#. module: r3x_aged_partner_balance
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:170
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:185
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1132
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1175
+#: report:new_aged_trial_balance:0
 #, python-format
 msgid "Comments"
 msgstr "Commentaires"
@@ -83,25 +100,41 @@ msgid "Period 2"
 msgstr "Période 2"
 
 #. module: r3x_aged_partner_balance
-#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:165
-#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1127
-#, python-format
-msgid "Period 1"
-msgstr "Période 1"
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Account Total"
+msgstr "Total du compte"
 
 #. module: r3x_aged_partner_balance
-#: field:account.payment.display.credit,partner_id:0
-msgid "partner_id"
-msgstr ""
+#: report:aged_trial_report_detailed:0
+msgid "Invoice No."
+msgstr "Numéro de facture"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0
+#: report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Chart of Accounts"
+msgstr "Charte de comptes"
 
 #. module: r3x_aged_partner_balance
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:171
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:186
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1133
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1176
+#: report:new_aged_trial_balance:0
 #, python-format
 msgid "Next Action Date"
 msgstr "Date de la prochaine action"
+
+#. module: r3x_aged_partner_balance
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:165
+#: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1127
+#, python-format
+msgid "Period 1"
+msgstr "Période 1"
 
 #. module: r3x_aged_partner_balance
 #: selection:account.payment.display.credit,state:0
@@ -129,6 +162,18 @@ msgid "Company"
 msgstr "Société"
 
 #. module: r3x_aged_partner_balance
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance_detail:0
+msgid "Invoice Date"
+msgstr "Date de la facture"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Partner's"
+msgstr "Type de compte"
+
+#. module: r3x_aged_partner_balance
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:168
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1130
 #, python-format
@@ -150,6 +195,12 @@ msgid "Aged By Payment Terms"
 msgstr "Agée par terme de paiement"
 
 #. module: r3x_aged_partner_balance
+#: model:ir.actions.report.xml,name:r3x_aged_partner_balance.report_account_aged_partner_balance_detailed
+#: model:ir.actions.report.xml,name:r3x_aged_partner_balance.report_new_account_aged_partner_balance_detailed
+msgid "Aged Partner Balance (Detailed)"
+msgstr "Balance agée des tiers (détaillée)"
+
+#. module: r3x_aged_partner_balance
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:181
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1144
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1158
@@ -164,6 +215,11 @@ msgid "move_id"
 msgstr ""
 
 #. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,reconcile_id:0
+msgid "reconcile_id"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
 #: field:account.payment.display.credit,debit:0
 msgid "debit"
 msgstr "débit"
@@ -172,6 +228,13 @@ msgstr "débit"
 #: field:account.payment.display.credit,blocked:0
 msgid "blocked"
 msgstr "bloqué"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Target Moves"
+msgstr "Écritures cibles"
 
 #. module: r3x_aged_partner_balance
 #: view:account.aged.trial.balance:0
@@ -200,6 +263,7 @@ msgstr "Compte"
 #. module: r3x_aged_partner_balance
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1140
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1154
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance_detail:0
 #, python-format
 msgid "Due Date"
 msgstr "Date dûe"
@@ -210,8 +274,15 @@ msgid "Account Aged Trial balance Report"
 msgstr "Rapport de bilan provisoire agé"
 
 #. module: r3x_aged_partner_balance
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance_detail:0
+msgid "Aged Trial balance Detail Report"
+msgstr "Rapport de bilan détaillé"
+
+#. module: r3x_aged_partner_balance
 #: view:account.aged.trial.balance:0
 #: model:ir.actions.act_window,name:r3x_aged_partner_balance.r3x_action_account_aged_balance_view
+#: model:ir.actions.report.xml,name:r3x_aged_partner_balance.report_account_aged_partner_balance
+#: model:ir.actions.report.xml,name:r3x_aged_partner_balance.report_new_account_aged_partner_balance
 msgid "Aged Partner Balance"
 msgstr "Balance agée des tiers"
 
@@ -225,9 +296,29 @@ msgid "form0name"
 msgstr ""
 
 #. module: r3x_aged_partner_balance
-#: field:account.payment.display.credit,credit:0
-msgid "Credit"
-msgstr "Crédit"
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Analysis Direction"
+msgstr "Direction d'analyse"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:new_aged_trial_balance:0
+msgid "Aged Trial Balance"
+msgstr "Balance agée des tiers"
+
+#. module: r3x_aged_partner_balance
+#: selection:account.payment.display.credit,state:0
+msgid "Balanced"
+msgstr "Balance"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Fiscal Year"
+msgstr "Année fiscale"
 
 #. module: r3x_aged_partner_balance
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:179
@@ -269,6 +360,11 @@ msgid "Invoice No"
 msgstr "Numéro de facture"
 
 #. module: r3x_aged_partner_balance
+#: field:account.payment.display.credit,partner_id:0
+msgid "partner_id"
+msgstr ""
+
+#. module: r3x_aged_partner_balance
 #: field:account.payment.display.credit,ref:0
 #: field:account.payment.display.credit,reference:0
 msgid "Reference"
@@ -281,9 +377,9 @@ msgid "Due date"
 msgstr "Date dû"
 
 #. module: r3x_aged_partner_balance
-#: field:account.payment.display.credit,reconcile_id:0
-msgid "reconcile_id"
-msgstr ""
+#: field:account.payment.display.credit,credit:0
+msgid "Credit"
+msgstr "Crédit"
 
 #. module: r3x_aged_partner_balance
 #: field:account.payment.display.credit,invoice_date:0
@@ -295,6 +391,8 @@ msgstr "date de la facture"
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:177
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1124
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1167
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
 #, python-format
 msgid "Payment Term"
 msgstr "Terme de paiement"
@@ -310,9 +408,16 @@ msgid "Currency"
 msgstr "Devise"
 
 #. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Not due"
+msgstr "Non dû"
+
+#. module: r3x_aged_partner_balance
 #: view:account.aged.trial.balance:0
 msgid "Export"
-msgstr ""
+msgstr "Exporter"
 
 #. module: r3x_aged_partner_balance
 #: model:ir.model,name:r3x_aged_partner_balance.model_account_payment_display_credit
@@ -336,12 +441,22 @@ msgid "Partner"
 msgstr "Tiers"
 
 #. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: r3x_aged_partner_balance
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:169
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:184
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1131
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1147
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1161
 #: code:addons/r3x_aged_partner_balance/report/new_aged_partner_balance_xls.py:1174
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
 #, python-format
 msgid "Total"
 msgstr "Total"
@@ -356,12 +471,12 @@ msgid ""
 "you request an interval of 30 days OpenERP generates an analysis of "
 "creditors for the past month, past two months, and so on. "
 msgstr ""
-"La balance agée des tiers est un rapport plus détaillé de vos recevables "
-"par intervalle. Lors de l'ouverture de ce rapport, Odoo vous demande le nom de la "
-"société, la période fiscale et la durée de l'intervalle à analyser (en "
-"jours). Odoo calcule ensuite une table des balance de crédit par période. Donc si "
-"vous demandez un intervalle de 30 jours, Odoo génère une analyse "
-"de vos créditeurs pour le mois passé, les 2 mois passés, etc."
+"La balance agée des tiers est un rapport plus détaillé de vos recevables par "
+"intervalle. Lors de l'ouverture de ce rapport, Odoo vous demande le nom de "
+"la société, la période fiscale et la durée de l'intervalle à analyser (en "
+"jours). Odoo calcule ensuite une table des balance de crédit par période. "
+"Donc si vous demandez un intervalle de 30 jours, Odoo génère une analyse de "
+"vos créditeurs pour le mois passé, les 2 mois passés, etc."
 
 #. module: r3x_aged_partner_balance
 #: view:account.aged.trial.balance:0
@@ -372,3 +487,48 @@ msgstr "ou"
 #: help:account.payment.display.credit,currency_id:0
 msgid "The optional other currency if it is a multi-currency entry."
 msgstr "L'autre devise optionnelle si c'est une écriture multi-devise."
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_report_detailed:0 report:new_aged_trial_balance_detail:0
+msgid "Inv No."
+msgstr ""
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0
+#: report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Receivable Accounts"
+msgstr "Comptes client"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0
+#: report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Payable Accounts"
+msgstr "Comptes fournisseur"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0
+#: report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Receivable and Payable Accounts"
+msgstr "Comptes client et fournisseur"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0
+#: report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Future"
+msgstr "Futur"
+
+#. module: r3x_aged_partner_balance
+#: report:aged_trial_balance_detail_without_details:0
+#: report:aged_trial_report_detailed:0
+#: report:new_aged_trial_balance:0
+#: report:new_aged_trial_balance_detail:0
+msgid "Past"
+msgstr "Passé"

@@ -188,22 +188,22 @@ class account_aged_trial_balance(osv.osv_memory):
         else:
             res = {}
             if data_new['form']['hide_period']==True and data_new['form']['detailed_report']==False:
-                data['report_name']='r3x_aged_partner_balance.new_aged_trial_balance'
+                data['report_name']='new_aged_trial_balance'
                 data['name']="Aged Partner Balance By Period"
                 data,res=common_report_data_process(data,res)
                 
             # Print Report By Payment Term and Detail Report
             elif data_new['form']['hide_period']==True and data_new['form']['detailed_report']==True:
-                data['report_name']='r3x_aged_partner_balance.new_aged_trial_balance_detail'
+                data['report_name']='new_aged_trial_balance_detail'
                 data['name']="Detail Aged Partner Balance By Period"
                 data,res=common_report_data_process(data,res)
                 
             elif data_new['form']['hide_period']==False and data_new['form']['detailed_report']==True:
-                data['report_name']='r3x_aged_partner_balance.aged_trial_report_detailed'
+                data['report_name']='aged_trial_report_detailed'
                 data['name']="Aged Partner Balance Days Report Detail Report"
             
             else:
-                data['report_name']='r3x_aged_partner_balance.aged_trial_balance_detail_without_details'
+                data['report_name']='aged_trial_balance_detail_without_details'
                 data['name']="Aged Partner Balance Days Report"
         
         return data
